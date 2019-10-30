@@ -1,5 +1,6 @@
 package com.company;
 
+
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 
@@ -12,6 +13,15 @@ public class Product {
         code = "";
         description = "";
         price = 0.0;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Product product = (Product) obj;
+        return super.equals(obj)&&
+                code.equals(product.getCode()) &&
+                description.equals(product.getDescription()) &&
+                (price == product.getPrice());
     }
 
     // Get and set accessors for the code, description, and price instance variables

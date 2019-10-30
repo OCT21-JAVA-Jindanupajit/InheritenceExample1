@@ -6,6 +6,15 @@ public class Software extends Product {
     private String os;
 
     @Override
+    public boolean equals(Object obj) {
+        Software software = (Software) obj;
+        return super.equals(obj)&&
+                programmer.equals(software.getProgrammer()) &&
+                platform.equals(software.getPlatform()) &&
+                os.equals(software.getOs());
+    }
+
+    @Override
     public String toString(){
         return super.toString() +
                 "Software written by "+ programmer +"\n" +
