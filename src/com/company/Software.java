@@ -7,7 +7,11 @@ public class Software extends Product {
 
     @Override
     public String toString(){
-        return "Software written by " + programmer;
+        return super.toString() +
+                "Software written by "+ programmer +"\n" +
+                "Platform:           "+ platform + "\n" +
+                "OS:                 "+ os +"\n";
+
     }
 
     public String getProgrammer() {

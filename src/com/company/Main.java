@@ -12,6 +12,7 @@ public class Main {
         b.setCode(code);
         b.setAuthor("Dave W.");
         b.setPrice(59.99);
+        b.setPages(200);
         b.setDescription("Java programming book");
         System.out.println(b.toString());
 
@@ -19,6 +20,7 @@ public class Main {
         c.setCode("Book 8910");
         c.setAuthor("Dave W.");
         c.setPrice(49.99);
+        c.setPages(100);
         c.setDescription("Python programming book");
         System.out.println(c.toString());
 
@@ -28,6 +30,7 @@ public class Main {
         s.setPrice(999.99);
         s.setOs("Windows");
         s.setProgrammer("Fi");
+        s.setPlatform("PC");
         System.out.println(s.toString());
     }
 }

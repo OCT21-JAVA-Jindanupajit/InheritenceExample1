@@ -5,6 +5,13 @@ public class Book extends Product {
     private String author;
     private int pages;
 
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Author:             "+ author +"\n" +
+                "Pages:              "+ pages + "\n";
+    }
+
     public String getAuthor() {
         return author;
     }

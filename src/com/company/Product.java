@@ -17,7 +17,7 @@ public class Product {
     // Get and set accessors for the code, description, and price instance variables
     @Override
     public String toString() {
-        return "Code:                " + code + "\n" +
+        return  "Code:               " + code + "\n" +
                 "Description:        " + description + "\n" +
                 "Price:              " + this.getFormattedPrice() + "\n";
     }
